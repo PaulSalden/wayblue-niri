@@ -21,11 +21,13 @@ modules:
     repos:
       copr:
         #- atim/starship
+        - killcrb/ashell
         - lihaohong/yazi
     install:
       packages:
         #- micro
         #- starship
+        - ashell
         - syncthing
         - tmux
         - yazi
