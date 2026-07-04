@@ -1,13 +1,13 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: template
+name: wayblue-niri
 # description will be included in the image's metadata
-description: This is my personal OS image.
+description: My variation of wayblue's niri image for personal use.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 42 # latest is also supported if you want new updates ASAP
+base-image: ghcr.io/wayblueorg/niri
+image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -20,11 +20,15 @@ modules:
   - type: dnf
     repos:
       copr:
-        - atim/starship
+        #- atim/starship
+        - lihaohong/yazi
     install:
       packages:
-        - micro
-        - starship
+        #- micro
+        #- starship
+        - syncthing
+        - tmux
+        - yazi
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
