@@ -22,6 +22,7 @@ modules:
       copr:
         #- atim/starship
         #- killcrb/ashell
+        - craftidore/wayblueorg-hyprland
         - lihaohong/yazi
     install:
       packages:
