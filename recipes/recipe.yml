@@ -22,7 +22,7 @@ modules:
       copr:
         #- atim/starship
         #- killcrb/ashell
-        - lionheartp/hyprland
+        - lionheartp/Hyprland
         - lihaohong/yazi
     install:
       packages:
